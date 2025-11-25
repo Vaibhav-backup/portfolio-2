@@ -1,0 +1,5 @@
+{
+  "name": "Vaibhav's n8n Resume",
+  "description": "An interactive resume modeled after the n8n workflow automation interface, featuring a Gemini-powered assistant.",
+  "requestFramePermissions": []
+}
