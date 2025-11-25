@@ -1,4 +1,4 @@
-import React from 'react';
+import { ReactNode } from 'react';
 
 export enum NodeType {
   TRIGGER = 'TRIGGER',
@@ -11,7 +11,7 @@ export interface NodeData {
   id: string;
   type: NodeType;
   label: string;
-  icon: React.ReactNode;
+  icon: ReactNode;
   x: number;
   y: number;
   description?: string;

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, ReactElement } from 'react';
 import { INITIAL_NODES, RESUME_DATA } from './constants';
 import { NodeData } from './types';
 import WorkflowNode from './components/WorkflowNode';
@@ -54,7 +54,7 @@ const App: React.FC = () => {
 
   // Generate SVG paths for connections
   const renderConnections = () => {
-    const connections: React.ReactElement[] = [];
+    const connections: ReactElement[] = [];
     
     nodes.forEach(source => {
       if (source.outputs) {
